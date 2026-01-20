@@ -1,8 +1,70 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Stack Sans Notch';
+  src: url('/static/StackSansNotch-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stack Sans Notch';
+  src: url('/static/StackSansNotch-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stack Sans Notch';
+  src: url('/static/StackSansNotch-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stack Sans Notch';
+  src: url('/static/StackSansNotch-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stack Sans Notch';
+  src: url('/static/StackSansNotch-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stack Sans Notch';
+  src: url('/static/StackSansNotch-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme {
+  --color-primary: #0000FF;
+  --color-secondary: #00DDE2;
+  --color-grey-accent: #F2F4F8;
+  --color-grey: #ECECEC;
+  --color-bg: #F2F4F8;
+  --color-dark: #1E1E24;
+  --color-light-cyan: #D3F6FA;
+  --color-blue-light: #0000FF;
+  --color-blue: #000099
+
+  --font-sans: "Inter", sans-serif;
+  --font-notch: "Stack Sans Notch", sans-serif;
+
+  --image-primary-gradient: linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 153, 1) 100%);
+}
+
 body {
   margin: 0px;
   background: white;
 }
 
+/* Rest of the CSS from previous global.css can be kept or removed if covered by tailwind utilities */
 table {
   border-spacing: 0;
   border: 1px solid black;
@@ -20,70 +82,7 @@ table tr:last-child td {
   border-bottom: 0;
 }
 
-table th,
-td {
-  margin: 0;
-  padding: 0.5rem;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-}
-
 table th:last-child,
 td:last-child {
   border-right: 0;
-}
-
-.layout {
-  display: flex;
-  gap: 16px;
-}
-
-@media screen and (max-width: 751px) {
-  .layout {
-    display: block;
-  }
-}
-
-.layout .content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.breadcrumb {
-  display: flex;
-  gap: 24px;
-  list-style-type: "/  ";
-  padding: 8px 16px;
-  border-bottom: 1px solid lightgray;
-}
-
-.breadcrumb a {
-  color: blue;
-  text-decoration: none;
-}
-
-.menu {
-  flex-shrink: 0;
-  padding: 8px 16px;
-  border-right: 1px solid lightgray;
-}
-
-.menu a {
-  color: black;
-}
-
-.menu .active {
-  font-weight: bold;
-}
-
-@media screen and (max-width: 751px) {
-  .menu {
-    border-right: none;
-    border-bottom: 1px solid lightgray;
-  }
-}
-
-.menu ul {
-  padding-left: 16px;
 }

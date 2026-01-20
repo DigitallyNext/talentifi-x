@@ -1,13 +1,35 @@
-"use client";
+import { Banner } from "@components/home/Banner";
+import { StorySection } from "@components/home/StorySection";
+import { StatsSection } from "@components/home/StatsSection";
+import { StatementSection } from "@components/home/StatementSection";
+import { SolutionSection } from "@components/home/SolutionSection";
+import { RebuildSection } from "@components/home/RebuildSection";
+import { WhoSection } from "@components/home/WhoSection";
+import { HumanLeadSection } from "@components/home/HumanLeadSection";
+import { FormalOfferingSection } from "@components/home/FormalOfferingSection";
+import YourChapterSection from "@components/home/YourChapterSection";
+import HowItWorksSection from "@components/home/HowItWorksSection";
+import WhereWeSpecializeSection from "@components/home/WhereWeSpecializeSection";
+import TheOriginSection from "@components/home/TheOriginSection";
+import TheNextStepSection from "@components/home/TheNextStepSection";
 
-import { Suspense } from "react";
-
-import { WelcomePage } from "@refinedev/core";
-
-export default function IndexPage() {
+export default function Home() {
   return (
-    <Suspense>
-      <WelcomePage />
-    </Suspense>
+    <main className="w-full flex flex-col items-center bg-white">
+      <Banner />
+      <StorySection />
+      <StatsSection />
+      <StatementSection />
+      <RebuildSection />
+      <SolutionSection />
+      <WhoSection />
+      <HumanLeadSection />
+      <FormalOfferingSection />
+      <YourChapterSection />
+      <HowItWorksSection />
+      <WhereWeSpecializeSection />
+      <TheOriginSection />
+      <TheNextStepSection />
+    </main>
   );
 }
