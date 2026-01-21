@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 
 import { Header } from "@components/layout/Header";
 import { Footer } from "@components/layout/Footer";
+import { BackToTop } from "@components/layout/BackToTop";
 
 export default async function RootLayout({
   children,
@@ -49,6 +50,7 @@ export default async function RootLayout({
                   {children}
                 </div>
                 <Footer />
+                <BackToTop />
                 <RefineKbar />
               </div>
             </Refine>

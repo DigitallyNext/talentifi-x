@@ -7,11 +7,20 @@ export const RebuildSection = () => {
     <section className="w-full relative lg:py-32 py-10 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
+        {/* Desktop Image */}
         <Image
           src="/banner-home/bg-rebuild.webp"
           alt="Background"
           fill
-          className="lg:object-cover object-contain"
+          className="hidden md:block object-cover"
+          quality={100}
+        />
+        {/* Mobile Image */}
+        <Image
+          src="/banner-home/mobile-rebuild.webp"
+          alt="Background Mobile"
+          fill
+          className="block md:hidden object-cover"
           quality={100}
         />
       </div>
@@ -74,7 +83,7 @@ export const RebuildSection = () => {
           </div>
 
           {/* Right Column: Humans */}
-          <div className="flex flex-col gap-6 md:items-start md:text-left">
+          <div className="flex flex-col gap-6 md:items-start md:text-left ">
             <div className="flex items-center gap-4">
               <div className="">
                  <Image 
