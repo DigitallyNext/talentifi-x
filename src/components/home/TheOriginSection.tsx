@@ -20,7 +20,7 @@ const TheOriginSection = () => {
         {/* Quote Block */}
         <div className="relative flex flex-col items-center gap-10 text-center">
             {/* Quote Icon */}
-            <div className="absolute -top-12 -left-24 w-65 h-50 opacity-90 pointer-events-none hidden md:block">
+            <div className="absolute -top-12 -left-12 md:-left-24 w-40 h-32 md:w-65 md:h-50 opacity-10 md:opacity-90 pointer-events-none block">
                 <Image
                     src="/assets/figma/origin-quote.svg"
                     alt="Quote"
@@ -29,17 +29,18 @@ const TheOriginSection = () => {
                 />
             </div>
 
-            <h2 className="lg:text-[54px] text-[48px] font-bold font-notch text-white leading-tight">
+            <h2 className="lg:text-[54px] text-[40px] font-bold font-notch text-white leading-tight">
                 The Origin Story<span className="text-secondary">.</span>
             </h2>
             
-            <p className="text-[24px] md:text-[40px] font-sans text-white leading-tight font-normal">
+            <p className="text-[20px] md:text-[40px] font-sans text-white leading-tight font-normal">
                 Talentifi-X was built after <span className="text-secondary">23+ years in staffing. </span>
                 Years spent seeing what slows teams down.
                 What causes mis-hires. What gets ignored.
                 <br /><br />
-                Experience gave us clarity.
-                Urgency gave us momentum.
+                <span className="opacity-60 md:opacity-100">
+                Experience gave us clarity. Urgency gave us momentum.
+                </span>
             </p>
         </div>
 

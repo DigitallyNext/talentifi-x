@@ -34,7 +34,7 @@ export const HumanLeadSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-0 w-full flex flex-col items-center gap-24">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-4 w-full flex flex-col items-center gap-24">
         
         {/* Heading */}
         <h2 className="text-[40px] md:text-[54px] font-notch font-bold text-black text-center leading-tight max-w-4xl">

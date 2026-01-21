@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
 
 const OfferingCard = ({
   icon,
@@ -29,6 +30,15 @@ const OfferingCard = ({
       <p className=" lg:text-[24px] font-bold font-stack-text text-dark leading-relaxed opacity-90">
         {description}
       </p>
+
+      {/* Know More Button */}
+      <div className="mt-auto pt-4 flex flex-col items-start gap-1">
+        <button className="flex items-center gap-2 text-primary text-[22px] font-bold group">
+          Know More
+          <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
+        </button>
+        <div className="w-[140px] h-[4px] text-secondary rounded-full" />
+      </div>
     </div>
   </div>
 );
@@ -46,7 +56,7 @@ export const FormalOfferingSection = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-0 flex flex-col items-center gap-16 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-4 flex flex-col items-center gap-16 relative z-10">
         {/* Header */}
         <div className="flex flex-col items-center gap-6 text-center max-w-4xl">
           <h2 className="text-[40px] md:text-[54px] font-notch font-bold text-black leading-tight">

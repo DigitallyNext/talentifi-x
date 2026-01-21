@@ -19,7 +19,7 @@ export const WhoSection = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-0 flex flex-col items-center gap-16 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-4 flex flex-col items-center gap-16 relative z-10">
         {/* Header */}
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="text-[40px] md:text-[54px] font-notch font-bold text-black leading-tight">

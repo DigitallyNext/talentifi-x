@@ -16,8 +16,8 @@ export const StatsSection = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="flex-1 bg-linear-to-b from-grey to-white shadow-lg rounded-[10px] p-10 flex flex-col lg:flex-row items-center justify-center gap-10 min-h-62.5 transform hover:-translate-y-1 transition-transform duration-300 border-b-6 border-secondary">
-          <span className="text-[75px] font-bold text-primary leading-none">20-30</span>
+        <div className="flex-1 bg-linear-to-b from-grey to-white shadow-lg rounded-[10px] p-10 flex flex-col lg:flex-row items-center justify-center gap-6 min-h-62.5 transform hover:-translate-y-1 transition-transform duration-300 border-b-6 border-secondary">
+          <span className="text-[65px] font-bold text-primary leading-none">20-30</span>
           <div className="flex flex-col items-center lg:text-left text-center">
             <span className="text-[44px] font-bold text-primary uppercase tracking-wider ">Resumes</span>
             <span className="text-[18px] text-dark">that look right and feel wrong</span>

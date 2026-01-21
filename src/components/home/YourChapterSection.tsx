@@ -4,7 +4,7 @@ import { Check } from 'lucide-react';
 
 const YourChapterSection = () => {
   return (
-    <section className="relative w-full lg:py-24 py-12 px-4 md:px-0 overflow-hidden bg-white">
+    <section className="relative w-full lg:py-24 py-12 px-4 md:px-4 overflow-hidden bg-white">
       {/* Decorative Background - Bottom Left Glow */}
       <div className="absolute -left-50 bottom-0 w-150 h-150 bg-blue-100/50 rounded-full blur-[100px] pointer-events-none" />
 

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export const Banner = () => {
   return (
-    <section className="w-full pt-12 pb-24 px-6 md:px-0  bg-[#F7F9FC]">
+    <section className="w-full pt-12 pb-24 px-6 md:px-4  bg-[#F7F9FC]">
       <div className=" max-w-7xl mx-auto flex flex-col-reverse lg:flex-row lg:items-center items-start justify-between lg:gap-12 relative overflow-hidden">
       {/* Left Content */}
       <div className="flex flex-col gap-8  lg:mt-0 -mt-20 z-10">

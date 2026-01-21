@@ -17,7 +17,7 @@ export const RebuildSection = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-0 flex flex-col items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-4 flex flex-col items-center">
         
         {/* Header */}
         <div className="text-center lg:translate-y-[-50%]">

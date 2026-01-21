@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export function Header() {
   return (
-    <div className="w-full flex flex-col font-sans">
+    <div className="w-full flex flex-col font-sans sticky top-0 z-100">
       {/* Top Bar */}
-      <div className="w-full bg-gradient-to-br from-primary to-[#000099]">
-        <div className="w-full max-w-7xl mx-auto py-4 px-6 md:px-16 flex items-center justify-between   h-[40px]">
+      <div className="w-full bg-linear-to-br from-primary to-[#000099]">
+        <div className="w-full max-w-7xl mx-auto py-4 px-6 md:px-4 flex items-center justify-between   h-10">
           <span className="text-white text-sm font-medium">contact@talentifix.com</span>
           <div className="flex items-center gap-4">
             <Link href="#" className="text-white hover:opacity-80">
@@ -25,7 +25,7 @@ export function Header() {
 
       {/* Navigation Bar */}
       <nav className="w-full bg-white h-[80px] shadow-sm relative z-50">
-        <div className="w-full max-w-7xl mx-auto h-full px-6 md:px-16 flex items-center justify-between">
+        <div className="w-full max-w-7xl mx-auto h-full px-6 md:px-4 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
              {/* Placeholder Logo Icon */}
