@@ -1,8 +1,23 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Instagram, Linkedin, Facebook, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export function Header() {
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    return pathname === path;
+  };
+
+  const getLinkClasses = (path: string) => {
+    return isActive(path)
+      ? "text-primary font-bold border-b-2 border-secondary pb-1"
+      : "text-dark hover:text-primary transition-colors font-medium";
+  };
+
   return (
     <div className="w-full flex flex-col font-sans sticky top-0 z-100">
       {/* Top Bar */}
@@ -37,19 +52,19 @@ export function Header() {
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-primary font-bold border-b-2 border-secondary pb-1">
-              HOME
+            <Link href="/" className={getLinkClasses("/")}>
+              Home
             </Link>
-            <Link href="#" className="text-dark hover:text-primary transition-colors font-medium">
+            <Link href="#" className={getLinkClasses("/why-us")}>
               Why Us
             </Link>
-            <Link href="#" className="text-dark hover:text-primary transition-colors font-medium">
+            <Link href="#" className={getLinkClasses("/solutions")}>
               Solutions
             </Link>
-            <Link href="#" className="text-dark hover:text-primary transition-colors font-medium">
+            <Link href="#" className={getLinkClasses("/about")}>
               About
             </Link>
-            <Link href="#" className="text-dark hover:text-primary transition-colors font-medium">
+            <Link href="/contact" className={getLinkClasses("/contact")}>
               Contact
             </Link>
           </div>
@@ -57,9 +72,9 @@ export function Header() {
           {/* CTA Button */}
           <Link 
             href="#" 
-            className="hidden md:flex items-center gap-2 bg-gradient-to-br from-primary to-[#000099] text-white px-6 py-3 rounded-[5px] font-bold uppercase hover:bg-primary/90 transition-colors"
+            className="hidden md:flex items-center gap-2 bg-[#0000FF] text-white px-6 py-3 rounded-[5px] font-bold uppercase hover:bg-primary/90 transition-colors"
           >
-            Hire Talent
+            HIRE TALENT
             <ArrowRight size={20} />
           </Link>
 
