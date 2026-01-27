@@ -2,7 +2,7 @@ import { Banner } from "@components/home/Banner";
 import { StorySection } from "@components/home/StorySection";
 import { StatsSection } from "@components/home/StatsSection";
 import { StatementSection } from "@components/home/StatementSection";
-import { SolutionSection } from "@components/home/SolutionSection";
+import { Solutionsection } from "@components/home/SolutionSection";
 import { RebuildSection } from "@components/home/RebuildSection";
 import { WhoSection } from "@components/home/WhoSection";
 import { HumanLeadSection } from "@components/home/HumanLeadSection";
@@ -21,7 +21,7 @@ export default function Home() {
       <StatsSection />
       <StatementSection />
       <RebuildSection />
-      <SolutionSection />
+      <Solutionsection />
       <WhoSection />
       <HumanLeadSection />
       <FormalOfferingSection />

@@ -53,7 +53,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-6">
             <h4 className="text-[24px] font-bold font-notch text-black">Navigate</h4>
             <nav className="flex flex-col gap-2">
-              {['Home', 'Services', 'Contact', 'About', 'Industries'].map((item) => (
+              {['Home', 'Solutions', 'Contact', 'About', 'Industries'].map((item) => (
                 <Link 
                   key={item} 
                   href="#" 
@@ -129,7 +129,7 @@ export const Footer = () => {
         <div className="absolute bottom-0 left-0 w-full flex flex-col justify-end pb-8 z-50 px-4">
           <div className="max-w-7xl mx-auto w-full px-6 md:px-0 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-medium text-gray-500">
             <div className="flex items-center gap-8">
-              <Link href="#" className="hover:text-[#0000FF] transition-colors">Terms of Service</Link>
+              <Link href="#" className="hover:text-[#0000FF] transition-colors">Terms of Solutions</Link>
               <Link href="#" className="hover:text-[#0000FF] transition-colors">Privacy Policy</Link>
             </div>
             <p>Talentifi-x Inc © {new Date().getFullYear()}</p>

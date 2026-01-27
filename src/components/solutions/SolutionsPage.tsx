@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
 
-export const ServicesPage = () => {
+export const SolutionsPage = () => {
   return (
     <div className="w-full">
       {/* Header */}
       <header className="w-full flex flex-col items-center py-14 pb-14">
         <div className="w-full h-[60px] bg-[#0000FF] flex items-center justify-center">
-          <h1 className="text-white text-[32px] font-notch font-bold">Services</h1>
+          <h1 className="text-white text-[32px] font-notch font-bold">Solutions</h1>
         </div>
         <div className="w-full flex items-center justify-center gap-24 mt-8">
           <nav className="flex gap-8">
             <a href="#" className="text-[#1E1E24] text-[18px] font-medium hover:text-[#0000FF] transition-colors">Home</a>
-            <a href="#" className="text-[#1E1E24] text-[18px] font-medium hover:text-[#0000FF] transition-colors">Services</a>
+            <a href="#" className="text-[#1E1E24] text-[18px] font-medium hover:text-[#0000FF] transition-colors">Solutions</a>
             <a href="#" className="text-[#1E1E24] text-[18px] font-medium hover:text-[#0000FF] transition-colors">Contact</a>
             <a href="#" className="text-[#1E1E24] text-[18px] font-medium hover:text-[#0000FF] transition-colors">About</a>
             <a href="#" className="text-[#1E1E24] text-[18px] font-medium hover:text-[#0000FF] transition-colors">Industries</a>
@@ -21,7 +21,7 @@ export const ServicesPage = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full flex items-center justify-center py-16 px-14" style={{backgroundImage: "url('/assets/services/hero-visual.png')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      <section className="relative w-full flex items-center justify-center py-16 px-14" style={{backgroundImage: "url('/assets/Solutions/hero-visual.png')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className="flex items-center gap-20 max-w-7xl">
           <div className="flex-1">
             <h2 className="text-[50px] font-notch font-bold text-white mb-6 leading-tight">
@@ -30,13 +30,13 @@ export const ServicesPage = () => {
               build companies.
             </h2>
             <p className="text-[20px] text-white leading-relaxed mb-8">
-              From temporary staffing to executive search, we deliver hiring solutions
+              From temporary staffing to executive search, we deliver hiring Solutions
               that scale with your business — fast, precise, and built for results.
             </p>
           </div>
           <div className="flex-1 flex justify-center">
             <Image
-              src="/assets/services/hero-visual.png"
+              src="/assets/Solutions/hero-visual.png"
               alt="Hero Visual"
               width={600}
               height={400}
@@ -47,11 +47,11 @@ export const ServicesPage = () => {
       </section>
 
       {/* AI for Speed Section */}
-      <section className="relative w-full flex items-center justify-center py-22 px-14 bg-white" style={{backgroundImage: "url('/assets/services/ai-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      <section className="relative w-full flex items-center justify-center py-22 px-14 bg-white" style={{backgroundImage: "url('/assets/Solutions/ai-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className="flex items-center gap-20 max-w-7xl">
           <div className="flex-1 flex justify-center">
             <Image
-              src="/assets/services/ai-visual.svg"
+              src="/assets/Solutions/ai-visual.svg"
               alt="AI Visual"
               width={600}
               height={400}
@@ -93,21 +93,21 @@ export const ServicesPage = () => {
               </p>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <Image src="/assets/services/temp-icon-1.svg" alt="Icon" width={50} height={50} />
+                  <Image src="/assets/Solutions/temp-icon-1.svg" alt="Icon" width={50} height={50} />
                   <div>
                     <h4 className="text-[24px] font-notch font-bold text-[#1E1E24] mb-2">Rapid Deployment</h4>
                     <p className="text-[18px] text-[#1E1E24]">Qualified candidates within 24-48 hours</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Image src="/assets/services/temp-icon-2.svg" alt="Icon" width={50} height={50} />
+                  <Image src="/assets/Solutions/temp-icon-2.svg" alt="Icon" width={50} height={50} />
                   <div>
                     <h4 className="text-[24px] font-notch font-bold text-[#1E1E24] mb-2">Flexible Terms</h4>
                     <p className="text-[18px] text-[#1E1E24]">Short-term, long-term, or project-based</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Image src="/assets/services/temp-icon-3.svg" alt="Icon" width={50} height={50} />
+                  <Image src="/assets/Solutions/temp-icon-3.svg" alt="Icon" width={50} height={50} />
                   <div>
                     <h4 className="text-[24px] font-notch font-bold text-[#1E1E24] mb-2">Risk-Free Trial</h4>
                     <p className="text-[18px] text-[#1E1E24]">Try before you commit</p>
@@ -117,7 +117,7 @@ export const ServicesPage = () => {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/assets/services/temp-staffing-bg.svg"
+                src="/assets/Solutions/temp-staffing-bg.svg"
                 alt="Temporary Staffing"
                 width={600}
                 height={400}
@@ -129,7 +129,7 @@ export const ServicesPage = () => {
       </section>
 
       {/* Permanent Placement Section */}
-      <section className="relative w-full py-22 px-14" style={{backgroundImage: "url('/assets/services/perm-placement-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      <section className="relative w-full py-22 px-14" style={{backgroundImage: "url('/assets/Solutions/perm-placement-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className="max-w-7xl mx-auto text-center">
           <h3 className="text-[50px] font-notch font-bold text-white mb-6 leading-tight">
             This isn&apos;t faster hiring.<br />
@@ -152,7 +152,7 @@ export const ServicesPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="flex justify-center">
               <Image
-                src="/assets/services/contract-steps.png"
+                src="/assets/Solutions/contract-steps.png"
                 alt="Contract to Hire Process"
                 width={600}
                 height={400}
@@ -218,7 +218,7 @@ export const ServicesPage = () => {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/assets/services/exec-search-bg.svg"
+                src="/assets/Solutions/exec-search-bg.svg"
                 alt="Executive Search"
                 width={600}
                 height={400}
@@ -229,11 +229,11 @@ export const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Service Includes Section */}
-      <section className="relative w-full py-22 px-14" style={{backgroundImage: "url('/assets/services/service-includes-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+      {/* Solutions Includes Section */}
+      <section className="relative w-full py-22 px-14" style={{backgroundImage: "url('/assets/Solutions/Solutions-includes-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <div className="max-w-7xl mx-auto text-center">
           <h3 className="text-[50px] font-notch font-bold text-white mb-12 leading-tight">
-            Every Service Includes:
+            Every Solutions Includes:
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center">
@@ -261,12 +261,12 @@ export const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Who These Services Are Built For Section */}
+      {/* Who These Solutions Are Built For Section */}
       <section className="relative w-full py-22 px-14 bg-[#F2F4F8] overflow-hidden">
         <div className="max-w-7xl mx-auto text-center">
           <div className="absolute top-20 left-20">
             <Image
-              src="/assets/services/cube-1.png"
+              src="/assets/Solutions/cube-1.png"
               alt="Cube Element"
               width={171}
               height={211}
@@ -275,7 +275,7 @@ export const ServicesPage = () => {
           </div>
           <div className="absolute bottom-20 right-20">
             <Image
-              src="/assets/services/cube-2.png"
+              src="/assets/Solutions/cube-2.png"
               alt="Cube Element"
               width={238}
               height={298}
@@ -284,7 +284,7 @@ export const ServicesPage = () => {
           </div>
           <h3 className="text-[50px] font-notch font-bold text-[#1E1E24] mb-8 leading-tight relative z-10">
             If hiring matters to your business —<br />
-            these services were built for you.
+            these Solutions were built for you.
           </h3>
           <p className="text-[20px] text-[#1E1E24] leading-relaxed mb-12 max-w-4xl mx-auto relative z-10">
             Whether you&apos;re a startup building your founding team or an enterprise
@@ -305,14 +305,14 @@ export const ServicesPage = () => {
               <h4 className="text-white text-[24px] font-notch font-bold mb-4">Navigate</h4>
               <nav className="space-y-2">
                 <a href="#" className="block text-white/80 hover:text-white transition-colors">Home</a>
-                <a href="#" className="block text-white/80 hover:text-white transition-colors">Services</a>
+                <a href="#" className="block text-white/80 hover:text-white transition-colors">Solutions</a>
                 <a href="#" className="block text-white/80 hover:text-white transition-colors">Contact</a>
                 <a href="#" className="block text-white/80 hover:text-white transition-colors">About</a>
                 <a href="#" className="block text-white/80 hover:text-white transition-colors">Industries</a>
               </nav>
             </div>
             <div>
-              <h4 className="text-white text-[24px] font-notch font-bold mb-4">Services</h4>
+              <h4 className="text-white text-[24px] font-notch font-bold mb-4">Solutions</h4>
               <nav className="space-y-2">
                 <a href="#" className="block text-white/80 hover:text-white transition-colors">Temporary Staffing</a>
                 <a href="#" className="block text-white/80 hover:text-white transition-colors">Permanent Placement</a>

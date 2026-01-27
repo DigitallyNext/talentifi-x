@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export const SolutionSection = () => {
+export const Solutionsection = () => {
   return (
     <section className="w-full relative lg:py-24 py-16 flex flex-col items-center overflow-hidden">
       {/* Background Image */}

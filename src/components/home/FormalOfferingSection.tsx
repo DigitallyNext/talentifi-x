@@ -72,7 +72,7 @@ export const FormalOfferingSection = () => {
           <OfferingCard
             icon="/assets/figma/formal-icon-1.svg"
             title="Temporary Staffing"
-            description="Flexible workforce solutions for project-based or seasonal needs — designed for speed without sacrificing quality."
+            description="Flexible workforce Solutions for project-based or seasonal needs — designed for speed without sacrificing quality."
           />
           <OfferingCard
             icon="/assets/figma/formal-icon-2.svg"

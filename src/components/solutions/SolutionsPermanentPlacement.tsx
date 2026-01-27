@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
-export const ServicesPermanentPlacement = () => {
+export const SolutionsPermanentPlacement = () => {
   return (
     <section className="relative w-full bg-white overflow-hidden">
       <Image
-        src="/assets/services/perm-placement-bg.png"
+        src="/assets/Solutions/perm-placement-bg.png"
         alt="Permanent Placement background"
         fill
         sizes="100vw"
@@ -44,7 +44,7 @@ export const ServicesPermanentPlacement = () => {
             ].map((card, index) => (
               <div
                 key={card.title}
-                className="relative rounded-3xl bg-white border-t-3 border-primary px-10 py-10 shadow-[0px_14px_30px_rgba(0,0,0,0.08)] overflow-hidden h-100"
+                className="relative rounded-3xl bg-white border-t-3 border-primary px-6 sm:px-10 py-8 sm:py-10 shadow-[0px_14px_30px_rgba(0,0,0,0.08)] overflow-hidden min-h-[320px] md:h-100"
               >
                 {/* <div className="absolute top-0 left-10 right-10 h-[6px] bg-[#0000FF] rounded-full" /> */}
                 <svg
@@ -75,7 +75,7 @@ export const ServicesPermanentPlacement = () => {
                   />
                 </svg>
 
-                <div className="relative flex flex-col top-10">
+                <div className="relative flex flex-col top-6 md:top-10">
                   <div className="text-[#0000FF] font-notch font-bold text-[64px] md:text-[72px] leading-none text-left">
                     {card.value}
                   </div>

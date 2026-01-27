@@ -6,7 +6,7 @@ type IncludesIconName = "evaluation" | "screening" | "pricing" | "communicate" |
 const IncludesIcon = ({ name }: { name: IncludesIconName }) => {
   return (
     <Image
-      src={`/assets/services/includes-icons/${name}.svg`}
+      src={`/assets/Solutions/includes-icons/${name}.svg`}
       alt=""
       width={72}
       height={72}
@@ -15,11 +15,11 @@ const IncludesIcon = ({ name }: { name: IncludesIconName }) => {
   );
 };
 
-export const ServicesIncludes = () => {
+export const SolutionsIncludes = () => {
   return (
     <section className="relative w-full bg-white overflow-hidden">
       <Image
-        src="/assets/services/perm-placement-bg.png"
+        src="/assets/Solutions/perm-placement-bg.png"
         alt="Background pattern"
         fill
         sizes="100vw"
@@ -28,7 +28,7 @@ export const ServicesIncludes = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-14 py-22">
         <div className="flex flex-col items-center text-center">
           <h3 className="text-[32px] md:text-[48px] font-notch font-bold text-[#1E1E24] leading-tight">
-            What Every <span className="text-[#0000FF]">TalentiFi-X</span> Service Includes:
+            What Every <span className="text-[#0000FF]">TalentiFi-X</span> Solutions Includes:
           </h3>
           <p className="mt-3 text-[12px] md:text-[18px] text-dark font-medium">
             No matter the engagement, you get:
@@ -42,7 +42,7 @@ export const ServicesIncludes = () => {
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-white/20 backdrop-blur-sm border-3 border-white rounded-[12px]  px-10 py-10 flex flex-col items-center"
+                className="bg-white/20 backdrop-blur-sm border-3 border-white rounded-[12px] px-6 sm:px-10 py-10 flex flex-col items-center"
               >
                 <IncludesIcon name={item.icon} />
                 <p className="mt-6 text-[18px] md:text-[20px] font-notch font-bold text-[#1E1E24]">
@@ -62,7 +62,7 @@ export const ServicesIncludes = () => {
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-white/20 backdrop-blur-sm border-3 border-white rounded-[12px]  px-10 py-10 flex flex-col items-center"
+                className="bg-white/20 backdrop-blur-sm border-3 border-white rounded-[12px] px-6 sm:px-10 py-10 flex flex-col items-center"
               >
                 <IncludesIcon name={item.icon} />
                 <p className="mt-6 text-[18px] md:text-[20px] font-notch font-bold text-[#1E1E24]">
@@ -78,7 +78,7 @@ export const ServicesIncludes = () => {
       </div>
 
       <div className="pointer-events-none absolute right-36 bottom-2 hidden md:block opacity-20">
-        <Image src="/assets/services/cube-2.png" alt="Cube decoration" width={220} height={220} />
+        <Image src="/assets/Solutions/cube-2.png" alt="Cube decoration" width={220} height={220} />
       </div>
     </section>
   );
