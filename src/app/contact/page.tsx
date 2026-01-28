@@ -25,7 +25,7 @@ export default function ContactPage() {
       </div>
 
       {/* Next Step Section */}
-      <div className="w-full px-4 mb-20 flex justify-center">
+      <div className="w-full px-4 lg:mb-20 flex justify-center">
         <TheNextStepSection />
       </div>
     </main>
