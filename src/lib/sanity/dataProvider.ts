@@ -1,10 +1,9 @@
 import { DataProvider } from '@refinedev/core';
 import { sanityClient } from './client';
-import { groq } from 'next-sanity';
 
 export const blogDataProvider: DataProvider = {
   getList: async ({ resource, pagination, filters, sorters }) => {
-    const query = groq`*[_type == $type] | order(publishedAt desc) {
+    const query = `*[_type == $type] | order(publishedAt desc) {
       _id,
       title,
       slug,
@@ -34,7 +33,7 @@ export const blogDataProvider: DataProvider = {
   },
 
   getOne: async ({ resource, id }) => {
-    const query = groq`*[_type == $type && _id == $id][0] {
+    const query = `*[_type == $type && _id == $id][0] {
       _id,
       title,
       slug,
@@ -68,7 +67,7 @@ export const blogDataProvider: DataProvider = {
   },
 
   getMany: async ({ resource, ids }) => {
-    const query = groq`*[_type == $type && _id in $ids] {
+    const query = `*[_type == $type && _id in $ids] {
       _id,
       title,
       slug,

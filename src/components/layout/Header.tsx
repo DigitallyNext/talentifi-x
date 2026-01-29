@@ -75,6 +75,9 @@ export function Header() {
             <Link href="/solutions" className={getLinkClasses("/solutions")}>
               Solutions
             </Link>
+            <Link href="/blog" className={getLinkClasses("/blog")}>
+              Blog
+            </Link>
             <Link href="/" className={getLinkClasses("/about")}>
               About
             </Link>
@@ -92,110 +95,74 @@ export function Header() {
             <ArrowRight size={20} />
           </Link>
 
-          {/* Mobile Menu Toggle Button */}
+          {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 focus:outline-none"
             onClick={toggleMobileMenu}
-            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100"
+            aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? (
-              <X size={28} className="text-dark" />
-            ) : (
-              <Menu size={28} className="text-dark" />
-            )}
-          </button>
-        </div>
-      </nav>
-
-      {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black/50 z-40 md:hidden"
-          onClick={closeMobileMenu}
-        />
-      )}
-
-      {/* Mobile Menu Panel */}
-      <div
-        className={`fixed top-0 right-0 h-full w-[80%] max-w-[320px] bg-white z-50 transform transition-transform duration-300 ease-in-out md:hidden ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
-      >
-        {/* Mobile Menu Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-100">
-          <span className="text-xl font-bold font-notch text-primary">Menu</span>
-          <button
-            onClick={closeMobileMenu}
-            className="p-2 focus:outline-none"
-            aria-label="Close menu"
-          >
-            <X size={24} className="text-dark" />
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Menu Links */}
-        <div className="flex flex-col p-6 gap-6">
-          <Link
-            href="/"
-            className={getMobileLinkClasses("/")}
-            onClick={closeMobileMenu}
-          >
-            Home
-          </Link>
-          <Link
-            href="/"
-            className={getMobileLinkClasses("/why-us")}
-            onClick={closeMobileMenu}
-          >
-            Why Us
-          </Link>
-          <Link
-            href="/solutions"
-            className={getMobileLinkClasses("/solutions")}
-            onClick={closeMobileMenu}
-          >
-            Solutions
-          </Link>
-          <Link
-            href="/"
-            className={getMobileLinkClasses("/about")}
-            onClick={closeMobileMenu}
-          >
-            About
-          </Link>
-          <Link
-            href="/contact"
-            className={getMobileLinkClasses("/contact")}
-            onClick={closeMobileMenu}
-          >
-            Contact
-          </Link>
-
-          {/* Mobile CTA Button */}
-          <Link
-            href="/"
-            className="flex items-center justify-center gap-2 bg-[#0000FF] text-white px-6 py-4 rounded-[5px] font-bold uppercase hover:bg-primary/90 transition-colors mt-4"
-            onClick={closeMobileMenu}
-          >
-            HIRE TALENT
-            <ArrowRight size={20} />
-          </Link>
-        </div>
-
-        {/* Mobile Menu Footer - Social Links */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-100">
-          <div className="flex items-center justify-center gap-6">
-            <Link href="#" className="text-primary hover:opacity-80">
-              <Instagram size={24} />
-            </Link>
-            <Link href="#" className="text-primary hover:opacity-80">
-              <Linkedin size={24} />
-            </Link>
-            <Link href="#" className="text-primary hover:opacity-80">
-              <Facebook size={24} />
-            </Link>
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg z-50">
+            <div className="flex flex-col p-6 space-y-6">
+              <Link
+                href="/"
+                className={getMobileLinkClasses("/")}
+                onClick={closeMobileMenu}
+              >
+                Home
+              </Link>
+              <Link
+                href="/"
+                className={getMobileLinkClasses("/why-us")}
+                onClick={closeMobileMenu}
+              >
+                Why Us
+              </Link>
+              <Link
+                href="/solutions"
+                className={getMobileLinkClasses("/solutions")}
+                onClick={closeMobileMenu}
+              >
+                Solutions
+              </Link>
+              <Link
+                href="/blog"
+                className={getMobileLinkClasses("/blog")}
+                onClick={closeMobileMenu}
+              >
+                Blog
+              </Link>
+              <Link
+                href="/"
+                className={getMobileLinkClasses("/about")}
+                onClick={closeMobileMenu}
+              >
+                About
+              </Link>
+              <Link
+                href="/contact"
+                className={getMobileLinkClasses("/contact")}
+                onClick={closeMobileMenu}
+              >
+                Contact
+              </Link>
+              <Link
+                href="/"
+                className="flex items-center justify-center gap-2 bg-[#0000FF] text-white px-6 py-3 rounded-[5px] font-bold uppercase hover:bg-primary/90 transition-colors"
+                onClick={closeMobileMenu}
+              >
+                HIRE TALENT
+                <ArrowRight size={20} />
+              </Link>
+            </div>
           </div>
-        </div>
-      </div>
+        )}
+      </nav>
     </div>
   );
 }
